@@ -22,9 +22,17 @@
 
 
         <img class="main-image" src="https://via.placeholder.com/146x67" alt="Main Image" />
+        <% if (req.isAuthenticated()) { %> 
+            <p class="balance"><%=req.user.balance %> ETH</p>
+            <a href="/profile" ><img class="register-button2"src="<%=req.user.avatar %>"></a>
+            <form action="/logout" method="post"> 
+               <div class="register-button"><button class="sign-button" style="background-color: transparent; color: white; font-family: Kanit; font-size: large; border: none;">Logout</button></div>
+            </form>
+        <% }else{ %>
+            <a href="/register" class="sign-button"><div class="register-button">Register</div></a>
+            <a href="/login" class="sign-button"><div class="login-button">Login</div></a>
+            <% } %>
 
-        <a href="/register" class="sign-button"><div class="register-button">Register</div></a>
-        <a href="/login" class="sign-button"><div class="login-button">Login</div></a>
     </div>
 
 

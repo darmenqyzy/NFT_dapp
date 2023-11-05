@@ -43,7 +43,29 @@ body{
     top: 0;
     position: absolute;
 }
-
+.balance{
+  width: 120px;
+  height: 39px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  left: 65%;
+  top: 15px;
+  color: white;
+  position: absolute;
+}
+.register-button2{
+  width: 39px;
+  height: 39px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  left: 72%;
+  top: 15px;
+  position: absolute;
+  size: 40px;}
 .register-button {
     width: 114px;
     height: 39px;
@@ -91,7 +113,7 @@ body{
 }
 .navbar-brand-image{
     padding-top: 5px;
-    width: 130px;
+    width: 150px;
     height: 70px;
     padding-left: 20%;
 }
